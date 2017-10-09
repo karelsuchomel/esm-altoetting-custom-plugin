@@ -21,18 +21,3 @@ require_once( plugin_dir_path(__FILE__) . 'esm-register-profile-post-type.php');
 
 // profile post, custom field
 require_once( plugin_dir_path(__FILE__) . 'fields/esm-profile-fields.php');
-
-/*
-// create custom post type for projects. ( name, year, LHP/LHO )
-require_once( plugin_dir_path(__FILE__) . 'lspbce-register-projects-post-type.php');
-
-// create custom post type for examples. ( name, picture, annotation, full details )
-require_once( plugin_dir_path(__FILE__) . 'lspbce-register-example-post-type.php');
-
-
-// project post, custom field
-require_once( plugin_dir_path(__FILE__) . 'fields/lspbce-project-fields.php');
-
-// example post, custom field
-require_once( plugin_dir_path(__FILE__) . 'fields/lspbce-example-fields.php');
-*/

@@ -42,8 +42,26 @@ function esm_profile_meta_callback( $post )
 			</div>
 			<div class="meta-td">
 				<select name="profile-mission" id="profile-mission">
-					<option value="student" <?php if ( ! empty($esm_stored_data['profile-mission']) ) if ( $esm_stored_data['profile-mission'] === "student" ) echo "slected"; ?> >Student</option>
-					<option value="team" <?php if ( ! empty($esm_stored_data['profile-mission']) ) if ( $esm_stored_data['profile-mission'] === "team" ) echo "slected"; ?>>Team</option>
+					<option value="student" 
+						<?php 
+						if ( ! empty($esm_stored_data['profile-mission']) )
+						{
+							if ( $esm_stored_data['profile-mission'][0] === "student" )
+							{
+								echo "selected";
+							}
+						}
+						?> >Student</option>
+					<option value="team" 
+					<?php 
+					if ( ! empty($esm_stored_data['profile-mission']) )
+					{ 
+						if ( $esm_stored_data['profile-mission'][0] === "team" )
+						{ 
+							echo "selected";
+						}
+					}
+					?> >Team</option>
 				</select>
 			</div>
 		</div>
